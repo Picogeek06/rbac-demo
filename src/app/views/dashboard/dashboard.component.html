@@ -1,2 +1,10 @@
-<app-app-header></app-app-header>
-<p>Dashboard Route Works!</p>
+<div class="main">
+    <app-app-header></app-app-header>
+    <p>Dashboard Route Works!</p>
+    <button (click)="enableOverlay()"> Show Overlay </button>
+</div>
+@if (overlayActive) {
+<div class="overlay">
+    this will open a model if you click <a (click)="openModal()">here</a>
+</div>
+}

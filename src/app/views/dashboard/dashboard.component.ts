@@ -12,4 +12,15 @@ import { CommonModule } from '@angular/common';
 })
 export class DashboardComponent {
 
+  overlayActive: boolean = false;
+
+  enableOverlay() {
+    console.log('overlay');
+    this.overlayActive = !this.overlayActive;
+  }
+
+  openModal() {
+    //TODO make modal and open on click
+  }
+
 }

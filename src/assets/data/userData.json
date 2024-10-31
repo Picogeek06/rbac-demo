@@ -1,0 +1,26 @@
+{
+    "1" : {
+        "id": 1,
+        "username": "Picogeek",
+        "password": "123456789",
+        "role": "admin"
+    },
+    "2" : {
+        "id": 2,
+        "username": "Gopal",
+        "password": "123456780",
+        "role": "teacher"
+    },
+    "3" : {
+        "id": 3,
+        "username": "Mishra",
+        "password": "1234",
+        "role": "student"
+    },
+    "4" : {
+        "id": 4,
+        "username": "Krishna",
+        "password": "3366",
+        "role": "student"
+    }
+}
