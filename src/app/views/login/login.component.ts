@@ -24,12 +24,13 @@ export class LoginComponent {
   validateLogin() {
 
     this.userService.getUserData().subscribe((user: any) => {
-      
+      console.log(user);
+      let userData: any = Object.values(user);
+      if(this.password.value === userData[0].password && this.username.value === userData[0].username.toLowerCase()) {
+        this.router.navigate(['home']);
+      } else {
+        alert('Wrong Username / Password Entered');
+      }
     })
-
-    console.log('here',this.password.value);
-    if(this.password.value === '1234') {
-      this.router.navigate(['home']);
-    }
   }
 }
